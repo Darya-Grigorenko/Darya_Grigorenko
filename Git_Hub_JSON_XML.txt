@@ -1,0 +1,267 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.// +, new repository JSON
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.// git clone https://github.com/Darya-Grigorenko/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.// cat > new.json
+
+ 7. Добавить файл под гит. // git status
+git add new.json
+git status
+
+ 8. Закоммитить файл.// git commit -m "add new.json file"
+
+ 9. Отправить файл на внешний GitHub репозиторий. // git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.//
+cat >> new.json
+My name is Darya Andreevna Grigorenko
+I'm 25 years old
+I have a cat.
+I'll be glad to earn 2500$ in the nearest future. 
+ctrl+C
+
+ 11. Отправить изменения на внешний репозиторий.//
+git status
+git add new.json
+git status
+git commit -m "added new information in new.json file"
+git push
+
+ 12. Создать файл preferences.json // 
+cat > preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+cat >> preferences.json
+My favourite movie is Harry Potter
+My favourite tv series is "The Good Witch"
+I love rolls and crunchy salty snacks
+For me summer is the best season
+I want to visit Spain and all other countries one day
+ctrl+C
+git add preferences.json
+git status
+git commit -m "add information about my preferences in the file"
+git push
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+В течение всего курса я изучу следующие темы: 
+1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.
+2. Что такое клиент-серверная архитектура.
+3. HTTP Методы запросов на сервер.
+4. Коды ответов HTTP сервера.
+5. Структуры HTTP запросов и ответов.
+6. Что такое JSON, XML. Их структура.
+7. Тестирование API через Postman (JS, автотесты API).
+8. Снятие и чтение логов c внешнего сервера.
+9. Снифинг http web трафика через Charles и Fiddler.
+10. Dev Tools веб браузеров (Google Chrome, FireFox).
+11. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)
+12. Мобильное тестирование.
+13. Особенность iOS, Android, гайдлайны.
+14. Сборка iOS приложений на XCode. (У кого нет Mac компьютера, просто посмотрят)
+15. Сборка Android приложений на Android Studio.
+16. ADB (управление андройд девайсами).
+17. Настройка прокси и vpn на iOS и Android.
+18. Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android.
+19. Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса)
+20. Основы bash скриптинг, автоматизация рутинных задач на сервере.
+21. Доступ к удалённым серверам.
+22. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join).
+23. База данных Postgres (установка, настройка и использование).
+24. Нереляционная база данных Redis (установка, настройка и использование).
+25. Нагрузочное тестирование в Jmeter.
+26. Методология разработки Scrum.
+27. Python. (Изучение основ. Создание клиент серверного приложения)
+ctrl+C
+git add sklls.json
+git status
+git commit -m "add skills.json file"
+git push
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.// 
+
+cat > 1_file.json
+Creating new file for the homework.
+
+cat > 2_file.json
+Creating second file for the homework.
+
+git add 1_file.json 2_file.json
+git status
+git commit -m "adding 2 new files"
+git push
+
+
+ 16. На веб интерфейсе создать файл bug_report.json.//
+add file
+create new file
+name your file - bug_report.json
+commit new file "added bug_report.json"
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.//
+commit new file "added bug_report.json"
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.//
+{
+"Title": "Bug report"
+"Summary": "The button \"add to bag\" doesn't work with shoes category."
+"Project": "asos.com Online shopping"
+"Component": "\"add to bag\" button in the shoes section"
+"Version": 9.1
+"Severity": "blocker"
+"Priority": "high"
+"Status": "open"
+"Author": "Darya Grigorenko"
+"Assigned To": "Levochkin Egor"
+"Environment": [
+{
+"Windows 11, Google chrome, version 96.0.4664.110, website https://www.asos.com/aldo/aldo-glaeswen-metal-hardware-slides-in-white-and-gold/prd/23705711?clr=white&colourWayId=60505815&cid=11476"
+}
+],
+"Description": {
+"Steps to reproduce":
+1."open website https://www.asos.com/aldo/aldo-glaeswen-metal-hardware-slides-in-white-and-gold/prd/23705711?clr=white&colourWayId=60505815&cid=11476"
+2."Push the button \"add to bag\""
+}
+"Result": "shoes aren't added to bag"
+"Expected result": "shoes are added to bag"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.//
+added description for the bug report
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git fetch origin
+
+XML
+ 21. Создать внешний репозиторий c названием XML.//
+new repository XML
+
+ 22. Клонировать репозиторий XML на локальный компьютер.//
+git clone https://github.com/Darya-Grigorenko/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.//
+cat > new.xml
+Hello! I continue my git hub lessons.
+ctrl+C
+
+ 24. Добавить файл под гит.//
+git add new.xml
+
+ 25. Закоммитить файл.
+git commit -m "added new.xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.//
+cat >> new.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+ <personal data>
+   <name>Darya</name>
+   <lastName>Grigorenko</lastName>
+   <age>25</age>
+   <pets>1</pets>
+   <preferable salary>2500$</preferable salary>
+ </personal data>
+ctrl+C
+ 28. Отправить изменения на внешний репозиторий.//
+git add new.xml
+git commit -m "updated with personal information"
+git push 
+git status
+
+ 29. Создать файл preferences.xml//
+cat > preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.//
+
+cat >> preferences.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+ <preferences>
+   <favourite movie>Harry Potter</favourite movie>
+   <favourite tv series>The Good Witch</favourite tv series>
+   <favourite food>rolls and salty snacks</favourite food>
+   <favourite season>summer</favourite season>
+   <CountryToVisit>Thailand</CountryToVisit>
+ </preferences>
+ctrl+C
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML//
+cat > skills.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+ <skills>
+   <topic1>1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.</topic1>
+   <topic2>2. Что такое клиент-серверная архитектура.</topic2>
+   <topic3>3. HTTP Методы запросов на сервер.</topic3>
+   <topic4>4. Коды ответов HTTP сервера.</topic4>
+   <topic5>5. Структуры HTTP запросов и ответов.</topic5>
+   <topic6>6. Что такое JSON, XML. Их структура.</topic6>
+   <topic7>7. Тестирование API через Postman (JS, автотесты API).</topic7>
+   <topic8>8. Снятие и чтение логов c внешнего сервера.</topic8>
+   <topic9>9. Снифинг http web трафика через Charles и Fiddler.</topic9>
+   <topic10>10. Dev Tools веб браузеров (Google Chrome, FireFox).</topic10>
+   <topic11>11. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)</topic11>
+   <topic12>12. Мобильное тестирование.</topic12>
+   <topic13>13. Особенность iOS, Android, гайдлайны.</topic13>
+   <topic14>14. Сборка iOS приложений на XCode. (У кого нет Mac компьютера, просто посмотрят)</topic14>
+   <topic15>15. Сборка Android приложений на Android Studio.</topic15>
+   <topic16>16. ADB (управление андройд девайсами).</topic16>
+   <topic17>17. Настройка прокси и vpn на iOS и Android.</topic17>
+   <topic18>18. Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android.</topic18>
+   <topic19>19. Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса)</topic19>
+   <topic20>20. Основы bash скриптинг, автоматизация рутинных задач на сервере.</topic20>
+   <topic21>21. Доступ к удалённым серверам.</topic21>
+   <topic22>22. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join).</topic22>
+   <topic23>23. База данных Postgres (установка, настройка и использование).</topic23>
+   <topic24>24. Нереляционная база данных Redis (установка, настройка и использование).</topic24>
+   <topic25>25. Нагрузочное тестирование в Jmeter.</topic25>
+   <topic26>26. Методология разработки Scrum.</topic26>
+   <topic27>27. Python. (Изучение основ. Создание клиент серверного приложения)</topic27>
+ </skills>
+ctrl+C
+
+ 32. Сделать коммит в одну строку//
+git commit -m "adding 2 new files"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.xml skills.xml
+git commit -m "adding 2 new files"
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.//
+commit new file bug_report.xml
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.//
+done
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.//
+
+<?xml version="1.0" encoding="UTF-8" ?>
+ <BugReport>
+   <title>Bug report</title>
+   <summary>The button "add to bag" doesn't work with shoes category</summary>
+   <project>asos.com Online shopping</project>
+   <component>"add to bag" button in the shoes section</component>
+   <version>9.1</version>
+   <severity>blocker</severity>
+   <priority>high<priority>
+   <status>open</status>
+   <author>Darya Grigorenko</author>
+   <assignedTo>Levochkin Egor</assignedTo>
+   <environment>Windows 11, Google chrome, version 96.0.4664.110, website https://www.asos.com/aldo/aldo-glaeswen-metal-hardware-slides-in-white-and-gold/prd/23705711?clr=white&colourWayId=60505815&cid=11476</environment>
+   <description>
+     <stepsToReproduce>open website https://www.asos.com/aldo/aldo-glaeswen-metal-hardware-slides-in-white-and-gold/prd/23705711?clr=white&colourWayId=60505815&cid=11476</stepsToReproduce>
+     <stepsToReproduce>Push the button "add to bag"</stepsToReproduce></description>
+     <result>shoes aren't added to bag</results>
+     <expectedResult>shoes are added to bag</expectedResult>
+</BugReport>
+
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.//
+done
+
+ 38. Синхронизировать внешний и локальный репозиторий XML//
+git fetch origin 
